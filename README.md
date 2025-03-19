@@ -1,14 +1,16 @@
-### study-of-basic-gates
+### NAME : HARSHITHA V
+### REGISTER NO : 212223230074
+### EXP 1 : Study of Logic Gates
 
 **AIM:** 
 
 To study and verify the truth table of logic gates in Quartus II using Verilog programming.
 
-**Equipments Required:**
+**EQUPMENTS REQUIRED:**
 
 Software – Quartus prime 
 
-**Theory**
+**THEORY:**
 
 Introduction Logic gates are the basic building blocks of any digital system. Logic gates are electronic circuits having one or more than one input and only one output. The relationship between the input and the output is based on a certain logic. Based on this, logic gates are named as
 
@@ -49,7 +51,7 @@ Y= A⊕B
 The 'Exclusive-NOR' gate circuit does the opposite to the EX-OR gate. It will give a low output if either, but not both of its two inputs are high. The symbol is an EX-OR gate with a small circle on the output. The small circle represents inversion.
 Y= A⊕B
 
-**Procedure** 
+**PROCEDURE:** 
 
 1.	Type the program in Quartus software.
 
@@ -62,18 +64,73 @@ Y= A⊕B
 5.	For different input combinations generate the timing diagram.
 
 
-**PROGRAM**
+
+
+
+
+**PROGRAM:**
+
+
 
 Program for logic gates and verify its truth table in quartus using Verilog programming
+```
+module experiment1(a,b,yand,yor,ynot,yxor,ynand,ynor,yxnor);
+input a,b;
+output yand, yor,ynot,yxor,ynand,ynor,yxnor;
+assign yand = a & b;
+or(yor,a,b);
+not(ynot,a);
+xor(yxor,a,b);
+nand(ynand,a,b);
+nor(ynor,a,b);
+xnor(yxnor,a,b);
+endmodule
+```
 
- Developed by: RegisterNumber: 
+
+
+
  
-**Logic symbol & Truthtable**
-
-**RTL realization Output:** 
-
-**RTL**
-
-**Result:**
+**LOGIC SYMBOL & TRUTHTABLE:**
+![logic gates (1)](https://github.com/user-attachments/assets/80a81eb6-f196-4a70-9966-0b1cd3fecec2)
 
 
+
+
+
+
+
+
+
+
+
+
+**RTL REALIZATION OUTPUT:** 
+
+
+![digital-ex1](https://github.com/user-attachments/assets/2fb34ed1-5137-4587-9a8a-dc7ebd8c19f1)
+
+
+
+
+
+
+
+
+**RTL:**
+
+
+
+![image](https://github.com/user-attachments/assets/7de8761a-87f9-4dbd-8126-ac032dd39078)
+
+
+
+
+
+
+
+
+**RESULT:**
+
+
+Thu, the basic logic gates are studied and the truth tables are verified.
